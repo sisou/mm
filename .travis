@@ -1,0 +1,15 @@
+language: node_js
+node_js: '8'
+cache: yarn
+install: npm install
+script:
+- npm run build
+deploy:
+  provider: npm
+  email: julien.croain@gmail.com
+  skip_cleanup: true
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
+    repo: JulienCroain/mm
+    branch: master

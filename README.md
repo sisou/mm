@@ -57,7 +57,7 @@ This project use Javascript and :
 
 or
 ```
-npm install mm
+npm install vue-media-manager
 ```
 
 and
